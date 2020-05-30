@@ -35,9 +35,12 @@
   ssh -T git@github.com <Enter>
 
 # Clone GitHub Repo With SSH
+  Reference: https://www.youtube.com/watch?v=3aKda-oXWc8
   Open your project directory
   Open your bash terminal on same project directory
   eval $(ssh-agent -s) <Enter>
   ssh-add ~/.ssh/<id_rsa_test> <Enter>
   git clone git@github.com:arnabmunshi/Clone-With-SSH.git <Enter>
   Now your newly crated SSH key icon turn into "Green"
+  
+# I Using git.io to short git url
