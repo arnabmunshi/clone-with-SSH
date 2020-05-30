@@ -1,0 +1,43 @@
+# Open Bash Terminal
+  Reference: https://git.io/JeuCN
+  ssh-keygen -t rsa -b 4096 -C "<Your GitHub Email ID>" <Enter>
+
+# Enter file in which to save the key
+  Default is id_rsa or if you want change the type
+  /<DRIVE>/Users/<Username>/.ssh/<id_rsa_test> <Enter>
+
+# Enter passphrase
+  <Enter>
+
+# Enter same passphrase again:
+  <Enter>
+
+# Start the ssh-agent in the background
+  eval $(ssh-agent -s) <Enter>
+
+# Add your SSH private key to the ssh-agent.
+  ssh-add ~/.ssh/<id_rsa_test> <Enter>
+
+# Add SSH key to Github account
+  Reference: https://git.io/JfKid
+  Copy the SSH key on clipboard
+  clip < ~/.ssh/<id_rsa_test.pub> <Enter>
+
+# Open this link on your browser
+  https://github.com/settings/keys
+  Click "New SSH key" button
+  Give a Title Like: <Office Desktop>
+  And paste key on the key Textarea
+  Click "Add SSH key" button
+  Now your newly crated SSH key icon is "Gray"
+
+# Testing your SSH connection
+  ssh -T git@github.com <Enter>
+
+# Clone GitHub Repo With SSH
+  Open your project directory
+  Open your bash terminal on same project directory
+  eval $(ssh-agent -s) <Enter>
+  ssh-add ~/.ssh/<id_rsa_test> <Enter>
+  git clone git@github.com:arnabmunshi/Clone-With-SSH.git <Enter>
+  Now your newly crated SSH key icon turn into "Green"
