@@ -44,3 +44,32 @@
   Now your newly crated SSH key icon turn into "Green"
   
 # I Using git.io to short git url
+
+
+
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/<id_rsa_test>
+
+git config user.name
+git config user.email
+
+git config --global user.name "arnab"
+git config --global user.email "arnab47stars@gmail.com"
+
+git branch "new branch"
+git checkout new-branch
+git push -u origin new-branch
+git checkout master
+git merge "new-branch"
+
+git checkout master
+git tag v1.0
+git push origin v1.0
+
+git init
+git pull git@github.com:cryptappz/demo.git
+git add .
+git commit -m "messages"
+git remote add origin git@github.com:cryptappz/demo.git
+git remote -v
+git push -u origin master
