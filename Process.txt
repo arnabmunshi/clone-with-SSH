@@ -66,10 +66,13 @@ git checkout master
 git tag v1.0
 git push origin v1.0
 
+git status
 git init
-git pull git@github.com:cryptappz/demo.git
 git add .
 git commit -m "messages"
 git remote add origin git@github.com:cryptappz/demo.git
-git remote -v
 git push -u origin master
+git pull
+
+git remote rm origin
+git rebase --abort
