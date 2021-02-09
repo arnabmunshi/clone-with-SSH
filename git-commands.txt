@@ -1,0 +1,32 @@
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/<id_rsa_test>
+
+git config user.name
+git config user.email
+
+git config --global user.name "<your-name>"
+git config --global user.email "<your-git-email>"
+
+git branch "new branch"
+git checkout new-branch
+git push -u origin new-branch
+git checkout master
+git merge "new-branch"
+
+git checkout master
+git tag v1.0
+git push origin v1.0
+
+git tag -d tagName
+git push origin :tagName
+
+git status
+git init
+git add .
+git commit -m "messages"
+git remote add origin git@github.com:cryptappz/demo.git
+git push -u origin master
+git pull
+
+git remote rm origin
+git rebase --abort
