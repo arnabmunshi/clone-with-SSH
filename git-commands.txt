@@ -30,3 +30,5 @@ git pull
 
 git remote rm origin
 git rebase --abort
+
+git checkout -b feature-force-on-off
