@@ -33,3 +33,32 @@ git remote rm origin
 git rebase --abort
 
 git checkout -b feature-force-on-off
+
+/*
+|--------------------------------------------------------------------------
+| Some Advance Git Command
+|--------------------------------------------------------------------------
+ */
+# Add multiple files to git at the same time
+git add file-1 file-2 file-3
+
+# Get all git commit hash from a branch from latest to old
+git log
+
+# Exit from git text terminal 
+type q
+
+# Get latest git commit hash from a branch
+git log -n 1
+
+# Get files name in a specific commit
+git show --pretty="" --name-only <commit_sha>
+
+# Get changes in a specific commit
+git show <commit_sha>
+
+# Push specific commit
+git push origin <commit_sha>:master
+
+# Foce push a specific commit
+git push --force origin <commit_sha>:master
