@@ -62,3 +62,7 @@ git push origin <commit_sha>:master
 
 # Foce push a specific commit
 git push --force origin <commit_sha>:master
+
+# Delete last commit
+git log --oneline
+git reset HEAD~1
